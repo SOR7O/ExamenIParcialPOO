@@ -1,6 +1,14 @@
-
 fun main(args: Array<String>) {
-    println("Hola")
-    }
+    val NumeroElevador = SeleccionarElevador(0)
+    val solicitarPiso: Int
+
+
+     while (NumeroElevador.Piso<15) {
+         NumeroElevador.ElevadorSeleccionado()
+
+        }
+
+}
+
 
 
