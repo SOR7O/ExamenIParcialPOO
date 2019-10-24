@@ -13,7 +13,9 @@ open class SeleccionarElevador(var Piso: Int) {
 
     open fun ElevadorSeleccionado() {
         val numero: Int?
-        println("Estado de Elevador,DETENIDO:Piso:$Piso")
+if(Piso==0){
+        println("Estado de Elevador,DETENIDO en el Lobby")}
+        println("Estado de Elevador,DETENIDO :Piso:$Piso")
         print("Ingrese el piso al que desea: ")
         numero = readLine()!!.toInt()
         if(numero<16 && numero>0){
@@ -24,6 +26,7 @@ open class SeleccionarElevador(var Piso: Int) {
                 Thread.sleep(1000)
                 Piso--
             }
+
         }
         if(numero>Piso){
     while (Piso!=numero){
